@@ -2,7 +2,7 @@
 
 ## 📚 Array Problems
 
-### 1. Two Sum - [View Solution](twoSum.java)
+### 1. Two Sum - [View Solution](Arrays/twoSum.java)
 **Approach:**
 1. Create a HashSet to store visited numbers
 2. Iterate through the array elements using for-each loop
@@ -14,7 +14,7 @@
 
 ---
 
-### 2. Find Duplicate Elements - [View Solution](findDuplicate.java)
+### 2. Find Duplicate Elements - [View Solution](Arrays/findDuplicate.java)
 **Approach:**
 1. Take array size and elements as input from user
 2. Use nested loops: outer loop from i=0 to size-1
@@ -26,7 +26,7 @@
 
 ---
 
-### 3. Find Min & Max - [View Solution](MinMax.java)
+### 3. Find Min & Max - [View Solution](Arrays/MinMax.java)
 **Approach:**
 1. Initialize maxValue to Integer.MIN_VALUE and minValue to Integer.MAX_VALUE
 2. Traverse through the entire array
@@ -38,7 +38,7 @@
 
 ---
 
-### 4. Second Largest Element - [View Solution](secondLargest.java)
+### 4. Second Largest Element - [View Solution](Arrays/secondLargest.java)
 **Approach:**
 1. Initialize maxValue and secondMaxValue to Integer.MIN_VALUE
 2. Traverse the array once element by element
@@ -50,7 +50,7 @@
 
 ---
 
-### 5. Reverse Array - [View Solution](Revers.java)
+### 5. Reverse Array - [View Solution](Arrays/Revers.java)
 **Approach:**
 1. Initialize two pointers: st at index 0 and end at last index (size-1)
 2. Swap elements at st and end positions using temp variable
@@ -62,7 +62,7 @@
 
 ---
 
-### 6. Rotate Array - [View Solution](rotate.java)
+### 6. Rotate Array - [View Solution](Arrays/rotate.java)
 **Approach:**
 1. Create a Swap helper function that reverses array section using two pointers
 2. Handle edge case: calculate k = k % size to optimize rotations
@@ -74,7 +74,7 @@
 
 ---
 
-### 7. Move Zeros to End - [View Solution](moveZero.java)
+### 7. Move Zeros to End - [View Solution](Arrays/moveZero.java)
 **Approach:**
 1. Initialize count variable to 0 to track position of non-zero elements
 2. Traverse array and check if current element is non-zero
@@ -86,7 +86,7 @@
 
 ---
 
-### 8. Frequency Count - [View Solution](FreqCount.java)
+### 8. Frequency Count - [View Solution](Arrays/FreqCount.java)
 **Approach:**
 1. Create a boolean visited array to track processed elements
 2. For each unvisited element, initialize count to 1
@@ -98,7 +98,7 @@
 
 ---
 
-### 9. Equilibrium Index - [View Solution](EquilibriumIndx.java)
+### 9. Equilibrium Index - [View Solution](Arrays/EquilibriumIndx.java)
 **Approach:**
 1. Calculate total sum of all array elements first
 2. Initialize leftSum to 0 and rightSum to totalSum
@@ -110,7 +110,7 @@
 
 ---
 
-### 10. Maximum Sum Subarray (Kadane's Algorithm) - [View Solution](MaxSumSubArray.java)
+### 10. Maximum Sum Subarray (Kadane's Algorithm) - [View Solution](Arrays/MaxSumSubArray.java)
 **Approach:**
 1. Initialize maxSum to Integer.MIN_VALUE and currentSum to 0
 2. Traverse array and add each element to currentSum
@@ -122,7 +122,7 @@
 
 ---
 
-### 11. Subarray with Given Sum - [View Solution](SubArraySum.java)
+### 11. Subarray with Given Sum - [View Solution](Arrays/SubArraySum.java)
 **Approach:**
 1. Initialize currentSum to 0 and start pointer to 0
 2. Use end pointer loop from 0 to array length
@@ -136,7 +136,7 @@
 
 ## 🔢 Number Theory Problems
 
-### 12. Armstrong Number - [View Solution](amstrong.java)
+### 12. Armstrong Number - [View Solution](Arrays/amstrong.java)
 **Approach:**
 1. Take number as input and store original value for comparison
 2. Count total digits in the number using a while loop
@@ -148,7 +148,7 @@
 
 ---
 
-### 13. Armstrong Numbers in Range - [View Solution](ArmstrongInRange.java)
+### 13. Armstrong Numbers in Range - [View Solution](Arrays/ArmstrongInRange.java)
 **Approach:**
 1. Take start and end range as input
 2. For each number in range, count its digits
@@ -160,7 +160,7 @@
 
 ---
 
-### 14. GCD (Greatest Common Divisor) - [View Solution](gcd.java)
+### 14. GCD (Greatest Common Divisor) - [View Solution](Arrays/gcd.java)
 **Approach:**
 1. Take two numbers as input from user
 2. Find the smaller of the two numbers using Math.min()
@@ -172,7 +172,7 @@
 
 ---
 
-### 15. Rearrange Array by Sign - [View Solution](rearrangeArray.java)
+### 15. Rearrange Array by Sign - [View Solution](Arrays/rearrangeArray.java)
 **Approach:**
 1. Create a result array of same size as input array
 2. Initialize pos pointer to 0 (for even indices) and neg pointer to 1 (for odd indices)
@@ -184,7 +184,7 @@
 
 ---
 
-### 16. Stock Buy and Sell (Best Time to Buy and Sell Stock) - [View Solution](StockBuySell.java)
+### 16. Stock Buy and Sell (Best Time to Buy and Sell Stock) - [View Solution](Arrays/StockBuySell.java)
 **Approach:**
 1. Initialize minPrice to Integer.MAX_VALUE and maxProfit to 0
 2. Iterate through prices array using for-each loop
