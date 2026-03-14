@@ -103,8 +103,8 @@
 1. Calculate total sum of all array elements first
 2. Initialize leftSum to 0 and rightSum to totalSum
 3. Traverse array: first subtract current element from rightSum
-4. Check if leftSum equals rightSum; if yes, equilibrium index found
-5. Add current element to leftSum for next iteration
+4. Check if leftSum equals rightSum; if yes, equilibrium index found 
+5. Else Add current element to leftSum for next iteration and check again till found
 
 **Time Complexity:** O(n) | **Space Complexity:** O(1)
 

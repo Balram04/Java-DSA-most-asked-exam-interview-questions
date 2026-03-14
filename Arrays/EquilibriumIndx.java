@@ -1,32 +1,33 @@
+import java.util.*;
 public class EquilibriumIndx {
-    public static void main(String[] args) {
-        int[] arr = {-7, 1, 5, 2, -4, 3, 0};
-        int equilibriumIndex = findEquilibriumIndex(arr);
-        if (equilibriumIndex != -1) {
-            System.out.println("Equilibrium index found at: " + equilibriumIndex);
-        } else {
-            System.out.println("No equilibrium index found");
-        }
-    }
+    public static void main (String[]args){
+        Scanner sc=new Scanner (System.in);
 
-    public static int findEquilibriumIndex(int[] arr) {
-        int totalSum = 0;
-        for (int num : arr) {
-            totalSum += num;
-        }
+         String Line =sc.nextLine();
 
-        int leftSum = 0;
-        int rightSum = totalSum;
-        for (int i = 0; i < arr.length; i++) {
-            rightSum -= arr[i]; // Now rightSum is the right sum for index i
+         String parts[]=Line.split(" ");
+         int arr[]=new int[parts.length];
 
-            if (leftSum == rightSum) {
-                return i; // Equilibrium index found
-            }
+         for(int i=0;i<parts.length;i++){
+            arr[i]=Integer.parseInt(parts[i]);
+         }
 
-            leftSum += arr[i]; // Update left sum for the next iteration
-        }
+         int totalSum=0;
+         for(int x:arr){
+            totalSum+=x;
+         }
 
-        return -1; // No equilibrium index found
+         int leftSum=0;
+         int RightSum=totalSum;
+         for(int i=0;i<arr.length;i++){
+         RightSum-=arr[i];
+         if(leftSum==RightSum){
+            System.out.println("Equlibrium index Found");
+            return;
+         }
+         leftSum+=arr[i];
+         }
+            System.out.println(" NO Equlibrium index");
+
     }
 }

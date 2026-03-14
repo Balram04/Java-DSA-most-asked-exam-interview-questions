@@ -15,10 +15,11 @@ public class app{
         }
         if(isPrime){
               System.out.print(num +" ");
-              count++;
-              
-        } 
+              count++; 
+             } 
         }      
-        System.out.println("\nCount of prime numbers: "+count); 
+    System.out.println("\nCount of prime numbers: "+count); 
     }
 }
+
+

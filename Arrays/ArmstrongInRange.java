@@ -10,7 +10,7 @@ public class ArmstrongInRange {
         for (int num = start; num <= end; num++) {
             int original = num;
 
-            // count digits
+            // count digits  
             int count = 0;
             int temp = num;
             while (temp != 0) {
