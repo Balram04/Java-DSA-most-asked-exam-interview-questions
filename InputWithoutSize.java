@@ -1,3 +1,4 @@
+//By Scanner
 import java.util.*;
 
 public class inputWithoutSize {  // Class definition
@@ -16,5 +17,28 @@ public class inputWithoutSize {  // Class definition
             System.out.print(num + " "); // Print the array elements
         }
         System.out.println("Size of array: " + arr.length); // Print the size of the array
+    }
+}
+
+//By BufferReader 
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        String line = br.readLine();
+        String[] parts = line.split(",");    //split based on comman sepration 
+
+        int arr[] = new int[parts.length];
+
+        for(int i = 0; i < parts.length; i++){
+            arr[i] = Integer.parseInt(parts[i]);
+        }
+
+        for(int x : arr){
+            System.out.println(x);
+        }
     }
 }

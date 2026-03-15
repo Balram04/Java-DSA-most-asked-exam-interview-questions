@@ -1,3 +1,4 @@
+//tc: O(n^3) sc: O(1)
 import java.util.*;
 class LongestCommanSubstring {
     public static void main(String[] args) {
