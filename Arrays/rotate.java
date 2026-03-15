@@ -2,7 +2,7 @@ import java.util.*;
 
 public class rotate {
     public static int[] Swap(int arr[], int i, int j) {
-        while (i < j) {
+        while (j>i) {
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;

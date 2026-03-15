@@ -18,10 +18,10 @@ class RearrangeArray {
     }
 
     public static void main(String[] args) {
-        int[] nums = {3, -2, 1, -5, 4, -6};
+        int[] nums = {1, -1, -2, 3, -4, 2};
         int[] rearranged = rearrangeArray(nums);
         for (int num : rearranged) {
-            System.out.print(num + " ");
+            System.out.print(num + " ");  // Output: 1 -1 3 -2 -4 2
         }
     }
 }
