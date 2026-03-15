@@ -35,9 +35,11 @@ class SubArraySum{
         for (int end = 0; end < arr.length; end++) {
             currentSum += arr[end];
 
-            while (currentSum > target && start <= end) {
-                currentSum -= arr[start];
-                start++;
+            if (currentSum > target ) {
+                while(currentSum > target && start <= end) {
+                    currentSum -= arr[start];
+                    start++;
+                }
             }
 
             if (currentSum == target) {
