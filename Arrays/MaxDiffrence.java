@@ -1,3 +1,4 @@
+import java.util.*;
 class MaxDifference {
     public static void main(String[] args) {
         MaxDifference md = new MaxDifference();

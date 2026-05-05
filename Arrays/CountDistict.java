@@ -46,7 +46,8 @@ class Main {
 
         for(int i = 0; i < arr.length; i++) {
             boolean isUnique = true;
-
+//j ko v zero se start krna h taki i ke sath compare kr sake bcz if odnt start from zero to i then it will not compare with the previous elements and we will get wrong answer
+//like 2 start me higya leking 2 ke baad 2 aagya to wo compare nhi hoga agr j ko i se start krna hoga to 2 ke sath 2 compare hoga aur pata chal jayega ki 2 duplicate hai
             for(int j = 0; j < arr.length; j++) {
                 if(i != j && arr[i] == arr[j]) {
                     isUnique = false;

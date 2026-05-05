@@ -44,7 +44,7 @@ public class Main {
 
             // STEP 1: check key exist
             if (map.containsKey(num)) {
-                // STEP 2: get old value
+                // STEP 2: get old value  //map.put(num,map.getorDefault(num,0)+1); can be used to avoid step 2 and 3,4
                 int count = map.get(num);
                 // STEP 3: update value
                 count = count + 1;
