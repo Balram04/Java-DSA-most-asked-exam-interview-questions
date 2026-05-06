@@ -8,8 +8,9 @@ class Anagram{
 
         if(str1.length() !=str2.length()){
             System.out.println("Not Anagram ");
-            break;
+            return;
         }
+
         char[]a =str1.toCharArray();
         char[]b =str2.toCharArray();
         Arrays.sort(a);
@@ -46,7 +47,7 @@ class Main {
         for (int i = 0; i < 26; i++) {
             if (freq[i] != 0) {
                 System.out.println("Not Anagram");
-                break;
+                return;
             }
         }
 

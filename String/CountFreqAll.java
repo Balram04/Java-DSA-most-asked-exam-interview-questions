@@ -26,6 +26,7 @@ class CountFreqAll {
 }
 
 //Method 2: using HashMap tc o(n) and sc o(n)
+
 import java.util.*;
 class CountFreqAll {
     public static void main(String[] args) {
@@ -47,5 +48,24 @@ class CountFreqAll {
 //     System.out.println(key + " : " + map.get(key));
 // }
                map.forEach((key, value) -> System.out.println(key + " : " + value));
+    }
+}
+
+
+//Method 3: using frequency array tc o(n) and sc o(1)
+class CountFreqAll {
+    public static void main(String[] args) {
+       String str ="Programming";
+       str= str.toLowerCase();
+       int freq[]=new int [26];
+       for(int i=0;i<str.length();i++){
+          char ch =str.charAt(i);
+            freq[ch-'a']++;
+       }
+       for(int i=0;i<freq.length;i++){
+           if(freq[i] > 0){
+        System.out.println((char)(i + 'a') + " -> " + freq[i]);
+           }  
+       }
     }
 }

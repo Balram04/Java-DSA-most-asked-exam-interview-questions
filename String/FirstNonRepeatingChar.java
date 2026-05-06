@@ -49,11 +49,11 @@ class FirstNonRepeatingChar {
         String str = "aabbccdeff";
         LinkedHashMap<Character, Integer> charCount = new LinkedHashMap<>();
 
-        // count frequency
+       
+ // count frequency
         for (char c : str.toCharArray()) {
             charCount.put(c, charCount.getOrDefault(c, 0) + 1);
         }
-
         // find first non repeating
         for (char c : str.toCharArray()) {
             if (charCount.get(c) == 1) {
